@@ -12,3 +12,10 @@
     width: 50%;
 }
 
+.ModalOpen {
+    display: block;
+}
+
+.ModalClosed {
+    display: none;
+}
