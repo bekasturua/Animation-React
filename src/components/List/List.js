@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TransitionGroup } from "react-transition-group";
+import TransitionGroup from "react-transition-group/TransitionGroup";
 import CSSTransition from "react-transition-group/CSSTransition";
 
 import "./List.css";
@@ -27,7 +27,7 @@ class List extends Component {
 
   render() {
     const listItems = this.state.items.map((item, index) => (
-      <CSSTransition key={index} className="fade" timeout={300}>
+      <CSSTransition key={index} classNames="fade" timeout={300}>
         <li className="ListItem" onClick={() => this.removeItemHandler(index)}>
           {item}
         </li>
